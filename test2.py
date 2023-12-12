@@ -5,7 +5,7 @@ def countdown_timer(total_seconds):
     while total_seconds:
         mins, secs = divmod(total_seconds, 60)
         hours = 0
-        if mins > 60:
+        if mins >= 60:
             hours, mins = divmod(mins, 60)
         timeformat = '{:02d}:{:02d}:{:02d}'.format(hours, mins, secs)
         print(timeformat)
